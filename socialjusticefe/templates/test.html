@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Events Calendar</title>
+</head>
+
+<body>
+    <div id="calendar">
+        <h1>Social Justice Week</h1>
+        {% for i in "12345" %}
+        <div class="days" style="float:left;border:1px solid;background-color:light-blue;width:250px;height:150px;">
+            <ul style="text-decoration:none;">
+                <li>Morning: {{time}}</li>
+                <li>Afternoon: {{time}}</li>
+                <li>Evening: {{time}}</li>
+                <li style="float:right;">Day {{i}}</li>
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
